@@ -16,24 +16,24 @@ public class Operator03
 	public static void main(String[] args) 
 	{
 		/* 테스트 1 : 후위 연산자 와 전위 연산자
-int a = 10;
-
-a = a + 1;
-System.out.println("a = " + a);
-
-a++; // post-fix (후위연산자)
-System.out.println("a = " + a);
-
-++a; // pre-fix (전위연산자)
-System.out.println("a = " + a);
+		int a = 10;
+		
+		a = a + 1;
+		System.out.println("a = " + a);
+		
+		a++; // post-fix (후위연산자)
+		System.out.println("a = " + a);
+		
+		++a; // pre-fix (전위연산자)
+		System.out.println("a = " + a);
 		 */
 
 		/* 테스트 2 : ++ 후위 연산자. 나중에 연산을 수행
-int a = 10;
-int s = 0;
-s = a++; 
-
-System.out.println("s = " + s + ", a = " + a);
+		int a = 10;
+		int s = 0;
+		s = a++; 
+		
+		System.out.println("s = " + s + ", a = " + a);
 		 */		
 		/* 해설
 		 * a = 10, s = 0 일때, 
@@ -45,11 +45,11 @@ System.out.println("s = " + s + ", a = " + a);
 		 */
 
 		/* 테스트 3 : ++ 전위 연산자. 먼저 연산을 수행
-int a = 10;
-int s = 0;
-s = ++a;
-
-System.out.println("s = " + s + ", a = " + a);
+		int a = 10;
+		int s = 0;
+		s = ++a;
+		
+		System.out.println("s = " + s + ", a = " + a);
 		 */
 		/* 해설
 		 * a = 10, s = 0 일때,
@@ -58,10 +58,10 @@ System.out.println("s = " + s + ", a = " + a);
 		 */
 
 		/* 테스트 4 : 고민해 볼 문제? 위의 방법대로 하면 별것 아니다.
-int a = 10;
-a = a++;
-
-System.out.println("a = " + a);
+		int a = 10;
+		a = a++;
+		
+		System.out.println("a = " + a);
 		 */
 		/* 해설
 		 * 1) a = a++; 에서 a++ 자리에 a의 값이 놓이고, 그다음 a = a + 1이 수행;
@@ -71,12 +71,12 @@ System.out.println("a = " + a);
 		 */
 
 		/* 테스트 5 : 좀더 깊이 들어가 봅시다!
-int a = 10;
-int s = 0;
-
-s = a++ + a++ + a++;
-
-System.out.println("s = " + s + ", a = " + a);
+		int a = 10;
+		int s = 0;
+		
+		s = a++ + a++ + a++;
+		
+		System.out.println("s = " + s + ", a = " + a);
 		 */
 		/* 해설
 		 * 1) s = 10(a = a + 1 수행) + a++ + a++;
@@ -95,12 +95,12 @@ System.out.println("s = " + s + ", a = " + a);
 		 */
 
 		/* 테스트 6 : Post-fix 연산자로 한번 테스트 해 봅시다!
-int a = 10;
-int s = 0;
-
-s = ++a + ++a + ++a;
-
-System.out.println("s = " + s + ", a = " + a);
+		int a = 10;
+		int s = 0;
+		
+		s = ++a + ++a + ++a;
+		
+		System.out.println("s = " + s + ", a = " + a);
 		 */
 		/* 해설
 		 * 1) s = (a = a + 1를 먼저 수행) a + ++a + ++a;

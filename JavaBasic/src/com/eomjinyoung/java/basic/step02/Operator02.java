@@ -51,17 +51,17 @@ public class Operator02
 		 * 따라서, 2.5에서 소수점 이하 0.5가 짤린다. 그리고, 정수 2 는 암시적 형변환에 
 		 * 의해서 2.0f 로 바뀌어 result 변수에 저장된다. */
 		/*
-int a = 5;
-int b = 2;
-float result = a / b;
+		int a = 5;
+		int b = 2;
+		float result = a / b;
 		 */
 
 		/* 테스트 1 : 위의 예제가 정확한 값(2.5)이 나오도록 고쳐보자! */
 		/*
-int a = 5;
-int b = 2;
-float result = (float)a / (float)b;
-System.out.println(result);
+		int a = 5;
+		int b = 2;
+		float result = (float)a / (float)b;
+		System.out.println(result);
 		 */
 		/* 즉, 변수 a 와 b의 값을 float 형으로 바꾸고(type casting), 나누기(/) 연산을
 		 * 수행하면, float과 float의 연산결과는 당연히 float 이 되므로 결과값은 2.5f가
@@ -74,10 +74,10 @@ System.out.println(result);
 		/* 테스트 2 : "테스트 1"에서는 a, b 변수 모두 type casting 했다. 
 		 *			  이번에는 명시적 형변환과 암시적 형변환을 같이 이용해 보자! */
 		/*
-int a = 5;
-int b = 2;
-float result = (float)a / b; //또는, float result =  a / (float)b;
-System.out.println(result);
+		int a = 5;
+		int b = 2;
+		float result = (float)a / b; //또는, float result =  a / (float)b;
+		System.out.println(result);
 		 */
 		/* 변수 a의 값을 float 형으로 type casting 하고, 연산을 수행해 보니
 		 * 쩝.. b는 int 형이라... float 과 int 는 연산을 수행할 수 없을 것이다.
@@ -88,9 +88,9 @@ System.out.println(result);
 
 		/* 테스트 3 : 큰 값을 작은 메모리에 넣어보자! */
 		/*
-int a = 120;
-byte b = (byte)a;
-System.out.println(b);
+		int a = 120;
+		byte b = (byte)a;
+		System.out.println(b);
 		 */
 		/* 위의 예제는 아무런 문제 없다. 컴파일도 OK!, 실행도 OK!, 출력 결과도 OK! 
 		 * 그런데, 변수 a 값을 1200으로 바꾸어 컴파일 해보고 실행해 보자!
@@ -124,8 +124,8 @@ System.out.println(b);
 		 * 한번 예를 보자!
 		 */
 		/*
-int result = 10 - 3;
-System.out.println(result);
+		int result = 10 - 3;
+		System.out.println(result);
 		 */
 		/* 위의 예는 10 + (-3)으로 생각할 수있다.
 		 * 10 의 2진수 표현(int 형) : 0000 0000 0000 0000 0000 0000 0000 1010

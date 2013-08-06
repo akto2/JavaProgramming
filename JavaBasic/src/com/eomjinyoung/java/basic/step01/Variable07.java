@@ -29,9 +29,9 @@ package com.eomjinyoung.java.basic.step01;
  *			
  *			void 메소드1(int a) {
  *				int b;	// 지역 변수
-{ 
-int c;	// 지역변수
-}
+				{ 
+					int c;	// 지역변수
+				}
  *			}
  *
  *			void 메소드2(int a) {

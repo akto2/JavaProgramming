@@ -31,10 +31,10 @@ public class Control01
 	public static void main(String[] args) 
 	{
 		/* 테스트 1 : 간단한 조건문
-		int a = 5;
+		int a = 3;
 		if( a > 4)
-		System.out.println("a > 4 입니다.");
-		System.out.println("종료합니다!");
+			System.out.println("a > 4 입니다.");
+			System.out.println("종료합니다!");
 		 */
 
 		/* 테스트 2 : { } 을 사용하여 수행할 명령어를 묶어줌.

@@ -53,7 +53,7 @@ package com.eomjinyoung.java.basic.step04;
  * 	
  */
 
-class ArrayTest_1
+public class Array01 /*extends Object */
 {
 	public static void main(String[] args) 
 	{

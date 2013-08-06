@@ -51,7 +51,7 @@ public class Control04
 		int index = 0;
 		for( ; ; ){
 			if(index >= 10)
-			break;	// for문의 실행을 멈추고 빠져나간다.
+				break;	// for문의 실행을 멈추고 빠져나간다.
 		
 			System.out.println("index = " + index);
 			index++;
@@ -81,8 +81,8 @@ public class Control04
 		// 0 에서 9까지 출력하되 단, i 값이 5이면 더이상 그 이하는 수행하지 않고
 		// 막바로 for문의 증가문에서 수행을 계속한다.
 		for(int i = 0; i < 9; i++) {
-		if(i == 5)
-			continue;
+			if(i == 5)
+				continue;
 			System.out.println("i = " + i);
 		}
 		 */
@@ -93,8 +93,8 @@ public class Control04
 		AAA:
 		for(int i = 1; i < 10; i++) {
 			for(int j = 1; j < 10; j++) {
-			if(j == 5)
-				continue AAA;
+				if(j == 5)
+					continue AAA;
 				System.out.println(i + " * " + j + " = " + i * j);;
 			}
 			System.out.println("*************************************");

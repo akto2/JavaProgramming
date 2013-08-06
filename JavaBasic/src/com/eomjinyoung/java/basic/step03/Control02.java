@@ -23,6 +23,7 @@ package com.eomjinyoung.java.basic.step03;
  *	 만약, '식'의 결과값에 해당하는 경우가 없다면 'default:' 의 '문장0' 를 실행한다.
  *
  * - '식' 과 '상수식' 에는 int 형 값만 올 수 있다.
+ * - JDK7에서는 String 값이 올 수 있다.
  */
 
 public class Control02
@@ -31,15 +32,15 @@ public class Control02
 	{
 		/* 테스트 1 : 기본 테스트
 		// a 값을 10 또는 20, 그외의 숫자를 주어 테스트 해보라!
-		int a = 10;
+		int a = 400;
 		switch(a * 5) {
 		case 50:
 			System.out.println("a * 5는 50입니다.");
 			System.out.println("따라서, a는 10입니다.");
 			break;
 		case (20 * 100):
-			System.out.println("a * 5는 100입니다.");
-			System.out.println("따라서, a는 20입니다.");
+			System.out.println("a * 5는 2000입니다.");
+			System.out.println("따라서, a는 400입니다.");
 			break;
 		default:
 			System.out.println("a는 5의 배수이겠지요");
